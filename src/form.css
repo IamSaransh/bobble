@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+  .App{
+    position: relative;
+    top: -2.5rem;
+  }
+  body {
+    background:#ffffff;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .brand-logo{
+    margin-top: 2rem;
+    height: 2.5rem;
+    position: relative;
+    top: 4rem;
+    width: 70rem;
+    background: white;
+    box-shadow: -0px 5px 8px #7e7c7c;
+  }
+  .bobble{
+    width: 2rem;
+    position: relative;
+    top: .3rem;
+    left: 34rem;
+  }
+  .heading1{
+    font-weight: 100;
+    margin-bottom: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .p-head{
+    font-weight: 700;
+    color:rgb(110, 96, 96) ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .p-head-lorem{
+    color:rgb(110, 96, 96) ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    top: -.3rem;
+  }
+  .container {
+    margin-top: 15%;
+    width: 80%;
+    display: flex;
+    position: relative;
+    left: 0rem;
+    top: -5rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 37rem;
+    height: 36rem;
+    border-radius: 1px;
+    box-shadow: 1px 3px 10px #7e7c7c;
+  }
+  .container form {
+    display: grid;
+    grid-template-areas: "firstName lastName" "email email" "password password" "rePassword rePassword";
+    grid-gap: 10px;
+  }
+  .container form .input-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container form .input-container input {
+    height: 2.5rem;
+    border-radius: 3px;
+    width: 31rem;
+    border: 1px solid #a8a4a4;
+    padding-left: 5px;
+    outline: none;
+  }
+  .container form .input-container #last-name, .container form .input-container #first-name {
+    text-transform: capitalize;
+  }
+  .container form .first-name {
+    grid-area: firstName;
+  }
+  .container form .last-name {
+    grid-area: lastName;
+  }
+  .container form .email {
+    grid-area: email;
+  }
+  .container form .password {
+    grid-area: password;
+  }
+  .container form .re-password {
+    grid-area: rePassword;
+  }
+  /* google button css */
+  @import url("//fonts.googleapis.com/css?family=Roboto");
+  .oAuth-buttons{
+    display: flex;
+    position: relative;
+    left: 7.8rem;
+  }
+  .googleLogo{
+    width: 2rem;
+    position: relative;
+    bottom: .4rem;
+  }
+  .fbLogo{
+    width: 2rem;
+    position: relative;
+    bottom: .4rem;
+  }
+  .google-content p{
+    display: block;
+    margin-top: 1rem;
+    text-decoration: none;
+  }
+  .block-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      height: 100%;
+  }
+  
+  .block-wrap > div {
+      width: 100%;
+      text-align: center;
+  }
+  
+  .btn-google, .btn-fb {
+      display: inline-block;
+    border-radius: 1px;
+    position: relative;
+    left: -8rem;
+    margin-left: 1rem;
+      text-decoration: none;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+      transition: background-color .218s, border-color .218s ,box-shadow .218s;
+  }
+  
+  .btn-google .google-content, .btn-google .fb-content, .btn-fb .google-content, .btn-fb .fb-content {
+      display: flex;
+      align-items: center;
+      width: 15rem;
+    height: 3.8rem;
+    
+  }
+  
+  .btn-google .google-content .logo, .btn-google .fb-content .logo, .btn-fb .google-content .logo, .btn-fb .fb-content .logo {
+      padding: 15px;
+      height: inherit;
+  }
+  
+  .btn-google .google-content svg, .btn-google .fb-content svg, .btn-fb .google-content svg, .btn-fb .fb-content svg {
+      width: 18px;
+      height: 18px;
+  }
+  
+  .btn-google .google-content p, .btn-google .fb-content p, .btn-fb .google-content p, .btn-fb .fb-content p {
+      width: 100%;
+      line-height: 1;
+      letter-spacing: .21px;
+      text-align: center;
+      font-weight: 500;
+      font-family: 'Roboto', sans-serif;
+  }
+  
+  .btn-google {
+      background: #FFF;
+  }
+  
+  .btn-google:hover {
+      box-shadow: 0 0 3px 3px rgba(66, 133, 244, 0.3);
+  }
+  
+  .btn-google:active {
+      background-color: #eee;
+  }
+  
+  .btn-google .google-content p {
+      color: #757575;
+  }
+  
+  .btn-fb {
+      padding-top: 1.5px;
+      background: #4267b2;
+      background-color: #3b5998;
+  }
+  
+  .btn-fb:hover {
+      box-shadow: 0 0 3px 3px rgba(59, 89, 152, 0.3);
+  }
+  
+  .btn-fb .fb-content p {
+      color: rgba(255, 255, 255, 0.87);
+  }
+  
+  /* The Or line between oAuth buttons and the fields */
+  .signupbtn{
+    height: 2.2rem;
+    width: 31rem;
+    position: relative;
+    bottom: .1rem;
+    color: white;
+    font-weight: 400;
+    background-color: rgb(42, 43, 104);
+  }
